@@ -3,10 +3,10 @@ import logo from "../assets/logo/image-removebg-preview (1).png";
 
 const Nav = () => {
 	return (
-		<div id="Home" className="sticky top-0 z-[99999]">
-			<div className="navbar justify-between hidden lg:flex bg-base-100 ">
+		<div  className="sticky top-0 z-[99999]">
+			<div className="navbar justify-between hidden lg:flex bg-black ">
 				<div className="flex-1">
-					<a href="Home">
+					<a >
 						<img className="h-12" src={logo} alt="" />
 					</a>
 				</div>

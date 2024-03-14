@@ -16,7 +16,8 @@ function App() {
 
 	return (
 		<>
-			<div className="  max-w-screen-xl mx-auto">
+			<div className="bg-black">
+      <div className="  max-w-screen-xl  mx-auto">
       <Nav></Nav>
       <Banner></Banner>
       <AboutMe></AboutMe>
@@ -25,6 +26,7 @@ function App() {
       <Education></Education>
 
       <Footer></Footer>
+      </div>
       </div>
 		</>
 	);

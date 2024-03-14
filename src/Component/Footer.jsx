@@ -110,7 +110,7 @@ const Footer = () => {
 			<div className="md:w-1/3 ">
 				<h1 className="text-3xl font-bold my-5">Send me Email </h1>
 				<form ref={form} onSubmit={sendEmail}>
-					<div className="flex  overflow-hidden flex-col gap-8">
+					<div className="flex  overflow-hidden flex-col gap-10">
 						<input
 							data-aos="fade-left"
 							type="text"
@@ -142,7 +142,7 @@ const Footer = () => {
 						</button>
 					</div>
 				</form>{" "}
-				<ToastContainer />
+				<ToastContainer className="mt-10" />
 			</div>
 		</div>
 	);

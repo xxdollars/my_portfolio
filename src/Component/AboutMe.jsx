@@ -3,14 +3,14 @@ import image from "../assets/IMG-20230526-WA0007.jpg"
 
 const AboutMe = () => {
     return (
-        <div id="About" className='  bg-black py-10 lg:p-10'>
+        <div id="About" className='  bg-base-100 py-10 lg:p-10'>
            <div className='text-center'>
             <h1 className='text-2xl md:text-4xl lg:text-5xl mb-4'>About Me</h1>
             <p className='text-2xl md:text-4xl lg:text-5xl text-[#61CE70]'>-----who I am ------</p>
            </div>
 
         <div className='flex md:p-5  items-center gap-20 flex-col-reverse md:flex-row-reverse lg:w-4/5 mx-auto mt-20 '>
-            <div data-aos="fade-up" className='text-justify md:text-left md:Jw-1/2 space-y-5 text-xl'>
+            <div data-aos="fade-up" className='text-justify md:text-left md:Jw-1/2 space-y-5 text-xl p-4'>
                     <p >
                     Hey there! I'm Mustafiz, a passionate web developer with a mission to transform ideas into engaging digital experiences. I specialize in creating captivating user interfaces using HTML, CSS, and JavaScript, with a focus on dynamic applications using React.
                     </p>
