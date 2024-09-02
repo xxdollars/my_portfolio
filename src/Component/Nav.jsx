@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo/image-removebg-preview (1).png";
+import logo from "../assets/logo/logo.svg";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -20,13 +20,13 @@ const Nav = () => {
 		{ scope: container }
 	); // <-- scope for selector text (optional)
 	return (
-		<div  ref={container}  className="sticky top-0 z-[99999]">
+		<div  ref={container}  className="sticky navbar inset-0 bg-black bg-opacity-50 backdrop-blur-md text-white top-0 z-[99999]">
 
 
-			<div className="navbar justify-between hidden lg:flex bg-black ">
+			<div className="navbar px-20 justify-evenly lg:max-w-[1800px] w-full mx-auto hidden lg:flex bg-transparent ">
 				<div className="flex-1">
 					<a>
-						<img className="h-12" src={logo} alt="" />
+						<img className="w-40 h-10" src={logo} alt="" />
 					</a>
 				</div>
 				
@@ -52,7 +52,7 @@ const Nav = () => {
 				</div>
 			</div>
 
-			<div className="flex bg-base-100 py-4   md:hidden">
+			<div className="flex bg-black lg:bg-transparent md:hidden">
 				<div className="dropdown ">
 					<div tabIndex={0} role="button" className="btn btn-ghost ">
 						<svg
@@ -72,10 +72,10 @@ const Nav = () => {
 					</div>
 					<ul
 						tabIndex={0}
-						className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+						className="menu menu-sm space-y-10 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box  py-4  h-screen w-[300px]"
 					>
 						<li>
-							<a className="box" href="#About">About Me</a>
+							<a className="" href="#About">About Me</a>
 						</li>
 						<li>
 							<a href="#Skills">Skills</a>

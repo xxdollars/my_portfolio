@@ -1,19 +1,18 @@
-import html from "../assets/png-transparent-logo-html-html5-removebg-preview.png";
-import css from "../assets/png-transparent-logo-css-css3-thumbnail-removebg-preview.png";
-import js from "../assets/javascript-logo-javascript-icon-transparent-free-png.webp";
-import tailwind from "../assets/png-transparent-tailwind-css-css-framework-customizable-low-level-tailwind-logo-3d-icon-removebg-preview.png";
-import react from "../assets/1611079.png";
-import mongodb from "../assets/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail-removebg-preview.png";
-import node from "../assets/nodejs-logo-FBE122E377-seeklogo.com.png";
-
-import firebase from "../assets/image_processing20210905-11954-syw272.png";
-import "./Skills.css";
+import html from "../assets/icons/html.svg"
+import css from "../assets/icons/css.svg"
+import js from "../assets/icons/js.svg"
+import tailwind from "../assets/icons/tailwind.svg"
+import redux from "../assets/icons/redux.svg"
+import firebase from "../assets/icons/firebase.svg"
+import mongoDB from "../assets/icons/mongoDB.svg"
+import react from "../assets/icons/react.json"
+import nodeJs from "../assets/icons/nodeJs.json"
+import expressjs from "../assets/icons/expressjs.svg"
+import Lottie from "lottie-react";
 const Skills = () => {
-	// const boxShadowStyle = {
-	// 	// boxShadow: "#61CE70 0px 5px 15px",
 
-	// 	// You can add additional styles as needed
-	// };
+
+
 
 	return (
 		<div id="Skills" className=" p-10">
@@ -27,79 +26,73 @@ const Skills = () => {
 			</div>
 
 			<div className="">
-				<div className="grid overflow-hidden grid-cols-1 md:grid-cols-4 gap-10 my-10">
-				<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={html}
-								alt="react"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+				<div className=" overflow-hidden flex flex-wrap justify-center pt-10 gap-10 my-10">
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={html} className="h-full animateSkillImage  p-6 mx-auto" alt="" />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">HTML</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={css}
-								alt="css"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={css} className=" animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">CSS</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={tailwind}
-								alt="react"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={tailwind} className=" animateSkillImage  p-5 mx-auto" alt="" />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Tailwind</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={js}
-								alt="react"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={js} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Javascript</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={react}
-								alt="react"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+					
+					
+					
+					<div className="">
+						<div className="w-36 h-36 border-2 border-[#61CE70] ">
+							<Lottie animationData={react} loop={true} autoplay={true} style={{ width: 'full', height: 'full' }} />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">React</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={firebase}
-								alt="Html"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={redux} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Redux</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={node}
-								alt="react"
-								className="w-56 h-56 md:w-40 md:h-40"
-							/>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={firebase} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Firebase</h1>
 					</div>
-					<div className="mx-auto p-5" data-aos="fade-up">
-						<div className=" shady p-5 ">
-							<img
-								src={mongodb}
-								alt="react"
-								className="w-56  h-56 md:w-40 md:h-40"
-							/>
+					<div className="">
+						<div className="w-36 h-36 border-2 border-[#61CE70] ">
+							<Lottie animationData={nodeJs} loop={true} autoplay={true} style={{ width: 'full', height: 'full' }} />
 						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Node Js</h1>
 					</div>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={expressjs} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
+						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">expressjs</h1>
+					</div>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={mongoDB} className="h-full animateSkillImage  p-5 mx-auto" alt="" />
+						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">MongoDB</h1>
+					</div>
+
+
+					
 				</div>
 			</div>
 		</div>

@@ -1,309 +1,159 @@
-import topic1 from "../assets/topic/scrnli_12_11_2023_11-25-39 PM.png";
-import topic2 from "../assets/topic/scrnli_12_11_2023_11-27-13 PM.png";
-import topic3 from "../assets/topic/scrnli_12_11_2023_11-27-58 PM.png";
-import topic4 from "../assets/topic/scrnli_12_11_2023_11-28-14 PM.png";
-import topic5 from "../assets/topic/scrnli_12_11_2023_11-28-48 PM.png";
-import topic6 from "../assets/topic/scrnli_12_11_2023_11-29-19 PM.png";
-import topic8 from "../assets/topic/scrnli_12_11_2023_11-34-44 PM.png";
+import React, { useEffect, useState } from "react";
 
-import study1 from "../assets/study/scrnli_12_12_2023_12-14-43 AM.png";
-import study2 from "../assets/study/scrnli_12_12_2023_12-14-53 AM.png";
-import study3 from "../assets/study/scrnli_12_12_2023_12-15-07 AM.png";
-import study4 from "../assets/study/scrnli_12_12_2023_12-15-17 AM.png";
-import study5 from "../assets/study/scrnli_12_12_2023_12-15-47 AM.png";
-import study6 from "../assets/study/scrnli_12_12_2023_12-16-17 AM.png";
+import BikroyElectronics from "../assets/websiteThumbnail/bikroyelectronics.webp"
+import motionArt from "../assets/websiteThumbnail/motion-art.webp"
+import topicTrove from "../assets/websiteThumbnail/topic-trove.webp"
+import weddingHut from "../assets/websiteThumbnail/wedding-hut.webp"
+import assetHexa from "../assets/websiteThumbnail/asset-hexa.webp"
 
-import wedding1 from "../assets/wedding/scrnli_12_12_2023_10-32-24 AM.png";
-import wedding2 from "../assets/wedding/scrnli_12_12_2023_10-32-41 AM.png";
-import wedding3 from "../assets/wedding/scrnli_12_12_2023_10-32-55 AM.png";
-import wedding4 from "../assets/wedding/scrnli_12_12_2023_10-33-14 AM.png";
-import wedding5 from "../assets/wedding/scrnli_12_12_2023_10-33-23 AM.png";
-import wedding6 from "../assets/wedding/scrnli_12_12_2023_10-33-42 AM.png";
-import wedding7 from "../assets/wedding/scrnli_12_12_2023_10-34-06 AM.png";
 
-import { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
-import { Pagination, Navigation } from "swiper/modules";
-
-import React, { useEffect } from "react";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
+
+
+
+	const Data = [
+		{
+			title: "BikroyElectronics",
+			description: "BikroyElectronics is a comprehensive e-commerce platform for selling and purchasing electronics. The site is designed with a user-friendly interface, secure transactions, and a range of features that enhance both user and admin experiences.",
+			thumbnailImage: BikroyElectronics,
+			category: "FullStack",
+			clintLink: "https://github.com/Mustafiz82/BikroyElectronics",
+			serverLink: "https://github.com/Mustafiz82/BikroyElectronics-server",
+			LiveLInk: "https://bikroyelectronics.web.app/"
+
+		},
+		{
+			title: "Motion Art",
+			description: "Helivarse Motion Art is a sleek, modern website that showcases stunning motion graphics and animations. It offers a curated collection of visually engaging art, providing an immersive experience for design enthusiasts and creatives alike.",
+			thumbnailImage: motionArt,
+			category: "FrontEnd",
+			clintLink: "https://github.com/Mustafiz82/jobtask-Motion-art",
+			serverLink: "",
+			LiveLInk: "https://helivarse-motion-art.vercel.app/"
+
+		},
+		{
+			title: "Asset Hexa",
+			description: "This is a Team project that offers tools for money management, income/expense tracking, and investment in businesses. Users can write blogs, showcase businesses, and invest, while admins manage accounts and verify conten.",
+			thumbnailImage: assetHexa,
+			category: "FullStack",
+			clintLink: "https://github.com/NFRIDOY/asset-hexa",
+			serverLink: "https://github.com/NFRIDOY/Asset-Hexa-Server",
+			LiveLInk: "https://asset-hexa.web.app/"
+
+		},
+		
+		{
+			title: "Wedding Hut",
+			description: "The website features a welcoming homepage, secure user authentication with Google Sign-In, and private routes for logged-in users. It’s fully responsive with React AOS integration for smooth, engaging animations.",
+			thumbnailImage: weddingHut,
+			category: "FrontEnd",
+			clintLink: "https://github.com/Mustafiz82/Assignment-9-wedding-event-management",
+			serverLink: null,
+			LiveLInk: "https://wedding-hut-8caa8.web.app/"
+
+		},
+		
+		{
+			title: "TopicTrove",
+			description: "The website offers a welcoming homepage, secure user authentication with Google Sign-In, and features like post creation, editing, deletion, and comments. It’s fully responsive with efficient data storage.",
+			thumbnailImage: topicTrove,
+			category: "FullStack",
+			clintLink: "https://github.com/Mustafiz82/Assignment-12-TopicTrove-Clint-side-",
+			serverLink: "https://github.com/Mustafiz82/Assignment-12-TopicTrove-Server-side",
+			LiveLInk: "https://topic-trove.web.app/"
+
+		},
+	]
+
+
+
+	const [activeButton, setActiveButton] = useState("all Product")
+
+
+	const filteredData = Data.filter(item => {
+		if (activeButton === "all Product") return true;
+		if (activeButton === "FrontEnd") return item.category === "FrontEnd";
+		if (activeButton === "Full Stack") return item.category === "FullStack";
+		return false;
+	});
+
+	
+
 	useEffect(() => {
 		AOS.init();
 	}, []);
 
 	return (
-		<div id="Projects" className="bg-black py-10">
-			<h1 className="text-4xl md:text-5xl text-center py-10 pb-20">
-				{" "}
-				Latest projects
-			</h1>
+		<div id="Projects" className="bg-transparent py-10 ">
+			<div className="sticky -top-5 z-[999] py-5  bg-black backdrop-blur-2xl">
+				<h1 className="text-4xl md:text-5xl text-center pb-10 ">
 
-			<div className="space-y-16">
-				<div className="flex flex-col md:flex-row-reverse  overflow-hidden  items-center ">
-					<div
-						data-aos="fade-left"
-						className="  text-center md:w-1/2"
-					>
-						<h1 className="text-2xl md:text-4xl mb-4">
-							Topic Trove
-						</h1>
-						<p className="text-2xl gap-2 flex items-center justify-center mb-5  md:text-4xl text-[#61CE70]">
-						<span className="h-1 w-24 block bg-[#61CE70]"></span>A forum Website <span className="h-1 w-24 block bg-[#61CE70]"></span>
-						</p>
+					Latest projects
+				</h1>
 
-						<div className="flex gap-4 justify-center">
-						
-						<a href="https://topic-trove.web.app/" data-aos="zoom-in"  className="btn  btn-outline text-[#61CE70] hover:bg-[#61CE70] hover:text-black"> visit website</a>
-						</div>
-					</div>
 
-					<div className="md:w-1/2 w-screen mt-4 md:p-10 md:mt-5 md:mx-auto">
-						<Swiper
-							slidesPerView={1}
-							spaceBetween={30}
-							loop={true}
-							pagination={{
-								clickable: true,
-							}}
-							navigation={true}
-							modules={[Pagination, Navigation]}
-							className="mySwiper z-0"
-						>
-							<SwiperSlide>
-								<img
-									src={topic2}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={topic3}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={topic4}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={topic5}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={topic6}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={topic8}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={topic1}
-									className=" px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-						</Swiper>
-					</div>
-				</div>
+				<div className="flex flex-wrap bg-black justify-center gap-5">
+					<button onClick={() => setActiveButton("all Product")} className={` ${(activeButton == "all Product") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> All Projects</button>
+					<button onClick={() => setActiveButton("FrontEnd")} className={` ${(activeButton == "FrontEnd") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> Frontend Projects</button>
+					<button onClick={() => setActiveButton("Full Stack")} className={` ${(activeButton == "Full Stack") ? "bg-[#61CE70] text-black" : ""}     btn lg:px-8 rounded-md  hover:bg-[#61CE70] hover:text-black btn-outline  hover:border-none text-[#61CE70]`}> Full Stack Projects</button>
 
-				<div className="flex flex-col md:flex-row items-center overflow-hidden ">
-					<div
-						data-aos="fade-right"
-						className="  text-center md:w-1/2"
-					>
-						<h1 className="text-2xl md:text-4xl mb-4">StudyHub</h1>
-						<p className="text-2xl gap-2 flex items-center justify-center mb-5  md:text-4xl text-[#61CE70]">
-						<span className="h-1 w-24 block bg-[#61CE70]"></span>A Study Website<span className="h-1 w-24 block bg-[#61CE70]"></span>
-						</p>
 
-						<div className="flex gap-4 justify-center">
-						
-						<a href="https://studyhub-f5ad8.web.app/" data-aos="zoom-in"  className="btn  btn-outline text-[#61CE70] hover:bg-[#61CE70] hover:text-black"> visit website</a>
-						</div>
-					</div>
-
-					<div className="md:w-1/2 w-screen mt-4 space-y-5 md:p-10 md:mt-5 md:mx-auto">
-						<Swiper
-							slidesPerView={1}
-							spaceBetween={30}
-							loop={true}
-							pagination={{
-								clickable: true,
-							}}
-							navigation={true}
-							modules={[Pagination, Navigation]}
-							className="mySwiper z-0"
-						>
-							<SwiperSlide>
-								<img
-									src={study1}
-									className="md:w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={study2}
-									className="md:w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={study3}
-									className="md:w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={study4}
-									className="md:w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={study5}
-									className="md:w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={study6}
-									className="md:w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-						</Swiper>
-					</div>
-				</div>
-				<div className="flex flex-col md:flex-row-reverse items-center  overflow-hidden ">
-					<div data-aos="fade-left" className=" text-center md:w-1/2">
-						<h1 className="text-2xl md:text-4xl mb-4">
-							Wedding Hub
-						</h1>
-						<p className="text-2xl gap-2 flex items-center justify-center mb-5  md:text-4xl text-[#61CE70]">
-						<span className="h-1 w-20 block bg-[#61CE70]"></span>A Wedding service Website<span className="h-1 w-20 block bg-[#61CE70]"></span>
-						</p>
-
-						<div className="flex gap-4 justify-center">
-						
-						<a href="https://wedding-hut-8caa8.firebaseapp.com" data-aos="zoom-in"  className="btn  btn-outline text-[#61CE70] hover:bg-[#61CE70] hover:text-black"> visit website</a>
-						</div>
-					</div>
-
-					<div className="md:w-1/2 w-screen mt-4 md:p-10 md:mt-5 md:mx-auto">
-						<Swiper
-							slidesPerView={1}
-							spaceBetween={30}
-							loop={true}
-							pagination={{
-								clickable: true,
-							}}
-							navigation={true}
-							modules={[Pagination, Navigation]}
-							className="mySwiper z-0 z-0"
-						>
-							<SwiperSlide>
-								<img
-									src={wedding1}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={wedding2}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={wedding3}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={wedding4}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={wedding5}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={wedding6}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<img
-									src={wedding7}
-									className="w-full px-12"
-									alt=""
-									srcset=""
-								/>
-							</SwiperSlide>
-						</Swiper>
-					</div>
 				</div>
 			</div>
+
+
+
+			<div className="mt-10 flex flex-col px-5 gap-20 lg:gap-10">
+
+				{
+					filteredData?.map((item, inx) => (
+						<div className={`${inx % 2 == 0 ? "lg:flex-row-reverse" : ""} flex flex-col lg:flex-row justify-center h-full lg:gap-5`} key={inx}>
+							<div className="lg:w-[700px]">
+								<img src={item?.thumbnailImage} alt={item?.title} />
+							</div>
+
+							<div className="lg:w-[450px] h-full">
+								<div className="min-h-[340px] bg-[#61CE70]/20 backdrop-blur-lg border border-white/20 shadow-lg p-6 rounded-lg">
+									<h1 className="text-4xl">{item?.title}</h1>
+									<p className="text-lg mt-5">{item?.description}</p>
+								</div>
+								<div className="flex justify-between">
+									<Link to={item?.clintLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
+										<FaGithub /> Clint side
+									</Link>
+
+									{/* Conditionally render the Server side button */}
+									{item?.serverLink && (
+										<Link to={item?.serverLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
+											<FaGithub /> Server side
+										</Link>
+									)}
+
+									<Link to={item?.LiveLInk} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
+										<FaExternalLinkAlt /> Visit website
+									</Link>
+								</div>
+							</div>
+						</div>
+					))
+				}
+
+			</div>
+
+
+
+
+
 		</div>
 	);
 };

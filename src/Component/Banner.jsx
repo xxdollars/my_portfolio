@@ -3,7 +3,8 @@ import { TypeAnimation } from "react-type-animation";
 import { FaStar } from "react-icons/fa6";
 
 import "./banner.css";
-import ProfileImage from "../assets/profile-picture.jpeg";
+import ProfileImage from "../assets/profile-picture.webp";
+import StarryBackground from "./StarryBackground";
 const Banner = () => {
 	<style>
 		{`
@@ -17,8 +18,8 @@ const Banner = () => {
 
 	return (
 		<div id="home">
-			<div className="w-full  bg-black p-5 h-screen max-h-[700px] bg-[#54595] flex flex-col-reverse md:flex-row items-center justify-center gap-10 md:gap-20">
-				<div className="md:w-1/2 space-y-4 ">
+			<div className="w-full  bg-transparent p-5 h-screen max-h-[700px]  flex flex-col-reverse md:flex-row items-center justify-center gap-28 md:gap-20">
+				<div className="md:w-1/2 space-y-8 ">
 					<h1 className="text-3xl md:text-4xl lg:text-5xl font-bold  text-white">
 						HI, I'M Mustafiz !
 					</h1>
@@ -48,20 +49,20 @@ const Banner = () => {
 						experience.
 					</p>
 
-					<a href="https://drive.google.com/uc?export=download&id=1Go0eHmY2lYvHcnBpjrwaWOVJ4rlZt_Nf">
+					<a href="https://drive.google.com/uc?export=download&id=1-x1ZHJVUy1UjBzyvi0O98Wmco4V04hL6">
 						<button
 							data-aos="zoom-in"
-							className="btn  btn-outline text-[#61CE70] hover:bg-[#61CE70] hover:text-black"
+							className="btn mt-5 btn-outline text-[#61CE70] hover:bg-[#61CE70] hover:text-black"
 						>
 							{" "}
-							DownLoad Resume
+							DownLoad Resumew
 						</button>
 					</a>
 				</div>
-				<div className="">
+				<div className="mt-24 lg:mt-0">
 					<div
 						data-aos="zoom-in"
-						className="border-8 p-4 border-[#61CE70] rounded-full w-80 h-80"
+						className="border-8 hover:translate-y-10 duration-150  p-4 border-[#61CE70] rounded-full w-80 h-80"
 					>
 						<img
 							className="rounded-full h-full object-cover  w-full"
@@ -71,24 +72,13 @@ const Banner = () => {
 					</div>
 				</div>
 			</div>
-			
-			<div className="wrapper">
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className=" text-white " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				<span><FaStar className="i " /></span>
-				{/* <!-- stats - count particles --> */}
-			</div>
 
-			
-			
-			
+
+
+
+
+
+
 		</div>
 	);
 };

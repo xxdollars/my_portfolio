@@ -46,11 +46,11 @@ const Footer = () => {
 	return (
 		<div
 			id="Contact"
-			className="flex flex-col md:flex-row bg-black text-slate-200  justify-around p-10"
+			className="flex flex-col md:flex-row bg-transparent text-slate-200  justify-around p-10"
 		>
 			<div className="md:w-1/3 ">
 				<div
-					data-aos="zoom-in"
+					
 					className="flex gap-2 text-xl items-center"
 				>
 					<PiLinkSimpleBold
@@ -85,7 +85,7 @@ const Footer = () => {
 				</div>
 
 				<div
-					data-aos="zoom-in"
+					
 					className="flex gap-2 my-16 items-center  text-2xl"
 				>
 					<MdEmail className="text-[#61CE70]" size={40} />
@@ -96,7 +96,7 @@ const Footer = () => {
 				</div>
 
 				<div
-					data-aos="zoom-in"
+					
 					className="flex gap-2 my-10 items-center  text-2xl"
 				>
 					<FaLocationDot className="text-[#61CE70]" size={40} />
@@ -112,7 +112,7 @@ const Footer = () => {
 				<form ref={form} onSubmit={sendEmail}>
 					<div className="flex  overflow-hidden flex-col gap-10">
 						<input
-							data-aos="fade-left"
+							
 							type="text"
 							placeholder="Full Name"
 							required
@@ -120,7 +120,7 @@ const Footer = () => {
 							className="input input-bordered w-full max-w-sm border-[#61CE70]"
 						/>
 						<input
-							data-aos="fade-left"
+							
 							type="email"
 							placeholder="Your Email"
 							name="from_email"
@@ -128,7 +128,7 @@ const Footer = () => {
 							className="border-[#61CE70] input input-bordered w-full max-w-sm"
 						/>
 						<textarea
-							data-aos="fade-left"
+							
 							className="textarea h-40 border-[#61CE70] textarea-bordered w-full max-w-sm"
 							name="message"
 							placeholder="Your message"
