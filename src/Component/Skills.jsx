@@ -8,6 +8,8 @@ import mongoDB from "../assets/icons/mongoDB.svg"
 import react from "../assets/icons/react.json"
 import nodeJs from "../assets/icons/nodeJs.json"
 import expressjs from "../assets/icons/expressjs.svg"
+import nextjs from "../assets/icons/nextjs.webp"
+import laravel from "../assets/icons/laravel.svg"
 import Lottie from "lottie-react";
 const Skills = () => {
 
@@ -25,8 +27,8 @@ const Skills = () => {
 				</p>
 			</div>
 
-			<div className="">
-				<div className=" overflow-hidden flex flex-wrap justify-center pt-10 gap-10 my-10">
+			<div className="max-w-[800px] mx-auto">
+				<div className=" grid grid-cols-4   pt-10 gap-10 my-10">
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
 							<img src={html} className="h-full animateSkillImage  p-6 mx-auto" alt="" />
@@ -51,14 +53,20 @@ const Skills = () => {
 						</div>
 						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Javascript</h1>
 					</div>
-					
-					
-					
+
+
+
 					<div className="">
 						<div className="w-36 h-36 border-2 border-[#61CE70] ">
 							<Lottie animationData={react} loop={true} autoplay={true} style={{ width: 'full', height: 'full' }} />
 						</div>
 						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">React</h1>
+					</div>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={nextjs} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
+						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Next.Js</h1>
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
@@ -86,13 +94,19 @@ const Skills = () => {
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
+							<img src={laravel} className="h-full animateSkillImage  p-5 mx-auto" alt="" />
+						</div>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Laravel</h1>
+					</div>
+					<div className="">
+						<div className="w-36 h-36  border-2 border-[#61CE70] ">
 							<img src={mongoDB} className="h-full animateSkillImage  p-5 mx-auto" alt="" />
 						</div>
 						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">MongoDB</h1>
 					</div>
 
 
-					
+
 				</div>
 			</div>
 		</div>
