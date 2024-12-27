@@ -28,7 +28,7 @@ const Skills = () => {
 			</div>
 
 			<div className="max-w-[800px] mx-auto">
-				<div className=" grid grid-cols-4   pt-10 gap-10 my-10">
+				<div className=" grid justify-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4   pt-10 gap-10 my-10">
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
 							<img src={html} className="h-full animateSkillImage  p-6 mx-auto" alt="" />
