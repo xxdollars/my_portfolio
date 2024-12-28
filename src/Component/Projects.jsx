@@ -129,7 +129,7 @@ const Projects = () => {
 								</div>
 								<div className="flex justify-between">
 									<Link to={item?.clintLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
-										<FaGithub /> Clint side
+										<FaGithub /> Client side
 									</Link>
 
 									{/* Conditionally render the Server side button */}
