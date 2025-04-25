@@ -1,15 +1,15 @@
-import html from "../assets/icons/html.svg"
-import css from "../assets/icons/css.svg"
-import js from "../assets/icons/js.svg"
-import tailwind from "../assets/icons/tailwind.svg"
+import python from "../assets/icons/python.svg"
+import golang from "../assets/icons/go.svg"
+import aws from "../assets/icons/aws.svg"
+import ai from "../assets/icons/ai.svg"
 import redux from "../assets/icons/redux.svg"
-import firebase from "../assets/icons/firebase.svg"
+import js from "../assets/icons/js.svg"
 import mongoDB from "../assets/icons/mongoDB.svg"
 import react from "../assets/icons/react.json"
 import nodeJs from "../assets/icons/nodeJs.json"
 import expressjs from "../assets/icons/expressjs.svg"
 import nextjs from "../assets/icons/nextjs.webp"
-import laravel from "../assets/icons/laravel.svg"
+import tailwind from "../assets/icons/tailwind.svg"
 import Lottie from "lottie-react";
 const Skills = () => {
 
@@ -31,27 +31,27 @@ const Skills = () => {
 				<div className=" grid justify-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4   pt-10 gap-10 my-10">
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
-							<img src={html} className="h-full animateSkillImage  p-6 mx-auto" alt="" />
+							<img src={python} className="h-full animateSkillImage  p-6 mx-auto" alt="" />
 						</div>
-						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">HTML</h1>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Python</h1>
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
-							<img src={css} className=" animateSkillImage  p-8 mx-auto" alt="" />
+							<img src={golang} className=" animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
-						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">CSS</h1>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Golang</h1>
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
-							<img src={tailwind} className=" animateSkillImage  p-5 mx-auto" alt="" />
+							<img src={ai} className=" animateSkillImage  p-5 mx-auto" alt="" />
 						</div>
-						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Tailwind</h1>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">AI</h1>
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
-							<img src={js} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
+							<img src={aws} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
-						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Javascript</h1>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">AWS</h1>
 					</div>
 
 
@@ -76,9 +76,9 @@ const Skills = () => {
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
-							<img src={firebase} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
+							<img src={js} className="h-full animateSkillImage  p-8 mx-auto" alt="" />
 						</div>
-						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Firebase</h1>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Javascript</h1>
 					</div>
 					<div className="">
 						<div className="w-36 h-36 border-2 border-[#61CE70] ">
@@ -94,9 +94,9 @@ const Skills = () => {
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">
-							<img src={laravel} className="h-full animateSkillImage  p-5 mx-auto" alt="" />
+							<img src={tailwind} className="h-full animateSkillImage  p-5 mx-auto" alt="" />
 						</div>
-						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Laravel</h1>
+						<h1 className="text-[#1a1a1a] font-bold p-2 text-center w-36 bg-[#61CE70]">Tailwind</h1>
 					</div>
 					<div className="">
 						<div className="w-36 h-36  border-2 border-[#61CE70] ">

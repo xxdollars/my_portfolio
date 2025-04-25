@@ -15,12 +15,12 @@ const AboutMe = () => {
             <div className='flex md:p-5  max-h-[700px]  justify-center items-center gap-10 lg:gap-28 flex-col-reverse md:flex-row-reverse  mx-auto mt-20 '>
                 <div data-aos="fade-up" className='text-justify md:text-left md:Jw-1/2 space-y-5 lg:w-[700px] text-xl p-4'>
                     <p className="leading-relaxed text-justify">
-                        Hey there! I'm Mustafiz, a passionate web developer with a mission to transform ideas into engaging digital experiences. I specialize in creating captivating user interfaces using HTML, CSS, and JavaScript, with a focus on dynamic applications using React.
+                        Hey there! I'm Joran, a full-stack engineer with extensive experience in Web development, conversational AI, and machine learning. I am passionate about building intelligent systems that enhance productivity and the user experience.
                     </p>
 
 
                     <p className='leading-relaxed text-justify'>
-                        In the backend, I wield the power of Node.js and Express, crafting server-side logic, and use MongoDB for efficient data management.
+                    Beyond code, I take pride in keeping up with new developments through conferences, publications, and open source contributions. Sharing knowledge with the community is rewarding, as it allows continual learning from diverse perspectives.
                     </p>
                 </div>
                 <div className="">

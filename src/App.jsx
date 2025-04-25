@@ -31,7 +31,6 @@ function App() {
           <Banner/>
           <AboutMe/>
           <Skills/>
-          <Experience/>
           <Projects/>
           <Education/>
           <Footer/>

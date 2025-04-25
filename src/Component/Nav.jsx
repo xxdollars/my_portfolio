@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import logo from "../assets/logo/logo.svg";
+import logo from "../assets/logo/logo.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { RiMenu2Line } from "react-icons/ri";

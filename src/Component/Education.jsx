@@ -16,13 +16,10 @@ const Education = () => {
 		<div className="md:w-1/2 bg-[#61CE61] md:bg-base-100  overflow-hidden text-center md:text-left text-xl flex flex-col justify-center items-center">
 			<div  className="space-y-4 md:space-y-10">
 				<div>
-					<h1 className="text-3xl mb-2">Currently Studying </h1>
-					<p>Rangpur Polytechnic Institute , Rangpur</p>
+					<h1 className="text-3xl mb-2"> University of Novi Sad </h1>
+					<p>Bachelor’s Degree in Computer Science</p>
 				</div>
-				<div>
-					<h1 className="text-3xl mb-2"> Completed SSC from</h1>
-					<p> RCCI Public School and College , Rangpur</p>
-				</div>
+				
 			</div>
 		</div>
 	</div></div>

@@ -66,13 +66,6 @@ const Footer = () => {
 						<h1 className=" mt-8  mb-2">Socials Links</h1>
 						<div className=" text-xl md:text-base flex md:flex-row gap-5  items-center">
 							<a target="_blank"
-								href="https://www.facebook.com/mdmustafiz.rahman.988/"
-								className="flex  items-center gap-2"
-							>
-								<FaFacebook className="text-[#61CE70]" />
-								<span className="hidden md:block">Facebook</span>
-							</a>
-							<a target="_blank"
 								href="https://www.linkedin.com/in/mdmustafiz8260/"
 								className="flex items-center gap-2"
 							>
@@ -96,22 +89,15 @@ const Footer = () => {
 					<MdEmail className="text-[#61CE70]" size={40} />
 					<div>
 						<h1>Email</h1>
-						<p className="text-base">mustafiz8260@gmail.com</p>
+						<p className="text-base">jzoki34@gmail.com</p>
 					</div>
 				</div>
 
 				<div className="flex gap-2 my-10 items-center text-2xl">
 					<FaHome className="text-[#61CE70]" size={40} />
 					<div>
-						<h1>Permanent Address</h1> 
-						<p className="text-base">Rangpur, Bangladesh</p>
-					</div>
-				</div>
-				<div className="flex gap-2 my-10 items-center text-2xl">
-					<FaLocationDot className="text-[#61CE70]" size={40} />
-					<div>
-						<h1>Present Address</h1> 
-						<p className="text-base">Mohammadpur, Dhaka, Bangladesh</p> {/* Changed example data for clarity */}
+						<h1>My Address</h1> 
+						<p className="text-base">Šabac, Serbia</p>
 					</div>
 				</div>
 
