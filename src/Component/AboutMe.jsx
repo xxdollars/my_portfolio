@@ -15,7 +15,7 @@ const AboutMe = () => {
             <div className='flex md:p-5  max-h-[700px]  justify-center items-center gap-10 lg:gap-28 flex-col-reverse md:flex-row-reverse  mx-auto mt-20 '>
                 <div data-aos="fade-up" className='text-justify md:text-left md:Jw-1/2 space-y-5 lg:w-[700px] text-xl p-4'>
                     <p className="leading-relaxed text-justify">
-                        Hey there! I'm Joran, a full-stack engineer with extensive experience in Web development, conversational AI, and machine learning. I am passionate about building intelligent systems that enhance productivity and the user experience.
+                        Hey there! I'm Zoran, a full-stack engineer with extensive experience in Web development, conversational AI, and machine learning. I am passionate about building intelligent systems that enhance productivity and the user experience.
                     </p>
 
 

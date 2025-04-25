@@ -66,14 +66,14 @@ const Footer = () => {
 						<h1 className=" mt-8  mb-2">Socials Links</h1>
 						<div className=" text-xl md:text-base flex md:flex-row gap-5  items-center">
 							<a target="_blank"
-								href="https://www.linkedin.com/in/mdmustafiz8260/"
+								href="https://www.linkedin.com/in/zoran-jovan-41169b362"
 								className="flex items-center gap-2"
 							>
 								<FaLinkedin className="text-[#61CE70]" />
 								<span className="hidden md:block">LinkedIn</span>
 							</a>
 							<a target="_blank"
-								href="https://github.com/Mustafiz82"
+								href="https://github.com/xxdollars"
 								className="flex items-center gap-2"
 							>
 								<FaGithub className="text-[#61CE70]" /> <span className="hidden md:block">Github</span>

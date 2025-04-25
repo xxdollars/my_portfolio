@@ -26,8 +26,8 @@ const Projects = () => {
 			description: "BikroyElectronics is a comprehensive e-commerce platform for selling and purchasing electronics. The site is designed with a user-friendly interface, secure transactions, and a range of features that enhance both user and admin experiences.",
 			thumbnailImage: BikroyElectronics,
 			category: "FullStack",
-			clintLink: "https://github.com/Mustafiz82/BikroyElectronics",
-			serverLink: "https://github.com/Mustafiz82/BikroyElectronics-server",
+			clintLink: "https://github.com/xxdollars/BikroyElectronics.git",
+			serverLink: "https://github.com/xxdollars/BikroyElectronics-server.git",
 			LiveLInk: "https://bikroyelectronics.web.app/"
 
 		},
@@ -36,7 +36,7 @@ const Projects = () => {
 			description: "Helivarse Motion Art is a sleek, modern website that showcases stunning motion graphics and animations. It offers a curated collection of visually engaging art, providing an immersive experience for design enthusiasts and creatives alike.",
 			thumbnailImage: motionArt,
 			category: "FrontEnd",
-			clintLink: "https://github.com/Mustafiz82/jobtask-Motion-art",
+			clintLink: "https://github.com/xxdollars/Jobtask-Motion-Art.git",
 			serverLink: "",
 			LiveLInk: "https://helivarse-motion-art.vercel.app/"
 
@@ -46,9 +46,9 @@ const Projects = () => {
 			description: "This is a Team project that offers tools for money management, income/expense tracking, and investment in businesses. Users can write blogs, showcase businesses, and invest, while admins manage accounts and verify conten.",
 			thumbnailImage: assetHexa,
 			category: "FullStack",
-			clintLink: "https://github.com/NFRIDOY/asset-hexa",
-			serverLink: "https://github.com/NFRIDOY/Asset-Hexa-Server",
-			LiveLInk: "https://asset-hexa.web.app/"
+			clintLink: "",
+			serverLink: "",
+			LiveLInk: "https://hostadvice.com/"
 
 		},
 		
@@ -57,7 +57,7 @@ const Projects = () => {
 			description: "The website features a welcoming homepage, secure user authentication with Google Sign-In, and private routes for logged-in users. It’s fully responsive with React AOS integration for smooth, engaging animations.",
 			thumbnailImage: weddingHut,
 			category: "FrontEnd",
-			clintLink: "https://github.com/Mustafiz82/Assignment-9-wedding-event-management",
+			clintLink: "https://github.com/xxdollars/Wedding-event-management.git",
 			serverLink: null,
 			LiveLInk: "https://wedding-hut-8caa8.web.app/"
 
@@ -68,9 +68,9 @@ const Projects = () => {
 			description: "The website offers a welcoming homepage, secure user authentication with Google Sign-In, and features like post creation, editing, deletion, and comments. It’s fully responsive with efficient data storage.",
 			thumbnailImage: topicTrove,
 			category: "FullStack",
-			clintLink: "https://github.com/Mustafiz82/Assignment-12-TopicTrove-Clint-side-",
-			serverLink: "https://github.com/Mustafiz82/Assignment-12-TopicTrove-Server-side",
-			LiveLInk: "https://topic-trove.web.app/"
+			clintLink: "",
+			serverLink: "",
+			LiveLInk: "https://fuelcompare.ie/"
 
 		},
 	]
@@ -128,9 +128,11 @@ const Projects = () => {
 									<p className="text-lg mt-5">{item?.description}</p>
 								</div>
 								<div className="flex justify-between">
+								{item?.clintLink && (
 									<Link to={item?.clintLink} className="btn hover:bg-[#4CAB58] flex-1 rounded-none text-black bg-[#61CE70]">
 										<FaGithub /> Client side
 									</Link>
+								)}
 
 									{/* Conditionally render the Server side button */}
 									{item?.serverLink && (

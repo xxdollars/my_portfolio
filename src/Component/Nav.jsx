@@ -57,9 +57,6 @@ const Nav = () => {
 							<a className="box" href="#Skills">Skills</a>
 						</li>
 						<li>
-							<a className="box" href="#experience">Experience</a>
-						</li>
-						<li>
 							<a className="box" href="#Projects">Projects</a>
 						</li>
 						<li>
