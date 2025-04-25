@@ -42,8 +42,8 @@ const Projects = () => {
 
 		},
 		{
-			title: "Asset Hexa",
-			description: "This is a Team project that offers tools for money management, income/expense tracking, and investment in businesses. Users can write blogs, showcase businesses, and invest, while admins manage accounts and verify conten.",
+			title: "Hostadvice",
+			description: "This is a comprehensive online platform dedicated to providing detailed information, reviews, and comparisons of web hosting services.It emphasizes its commitment to unbiased reviews, stating that while it may receive compensation from some hosting companies, such compensation does not influence the direction or conclusions of its reviews .",
 			thumbnailImage: assetHexa,
 			category: "FullStack",
 			clintLink: "",
@@ -64,8 +64,8 @@ const Projects = () => {
 		},
 		
 		{
-			title: "TopicTrove",
-			description: "The website offers a welcoming homepage, secure user authentication with Google Sign-In, and features like post creation, editing, deletion, and comments. It’s fully responsive with efficient data storage.",
+			title: "Fuel Compare",
+			description: "​FuelCompare.ie is an Irish platform designed to help users find the most affordable fuel prices in their vicinity. It offers real-time data on petrol, diesel, and alternative fuel prices across Ireland, aiming to assist consumers in making cost-effective fueling decisions.",
 			thumbnailImage: topicTrove,
 			category: "FullStack",
 			clintLink: "",
